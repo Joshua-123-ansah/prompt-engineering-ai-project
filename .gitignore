@@ -1,0 +1,38 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific - exclude all Excel files except Golden Standard.xlsx
+*.xlsx
+!Golden Standard.xlsx
+*.xls
+pipeline_run_stats.json
+
+# Documentation files (not needed in repo)
+ACTIVATE_VENV.md
+
+# Environment variables (may contain sensitive info)
+.env
+.env.local
+
