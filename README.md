@@ -329,6 +329,12 @@ export OPENAI_API_KEY="your-api-key-here"
 - Output: Excel (.xlsx) files
 - Gold Standard: Excel file with columns matching pipeline outputs
 
+## Key Learnings
+
+This project provided valuable insights into the trade-offs between different metadata extraction approaches for academic papers. Through systematic comparison of GROBID, NLP/ML, and LLM-based pipelines, I learned that each method has distinct strengths and limitations. GROBID offers specialized domain knowledge for academic documents but requires server infrastructure, while local NLP approaches provide independence from external services at the cost of accuracy. LLM-based extraction demonstrated superior performance in many cases, particularly for complex metadata fields like affiliations and abstracts, though it comes with API costs and dependency on external services.
+
+The evaluation process highlighted the importance of comprehensive metrics beyond simple accuracy. Precision, recall, and F1 scores revealed nuanced differences in how each pipeline handles various metadata fields, with some excelling at structured data (like author positions) while others performed better on unstructured text (like abstracts). This project also reinforced the value of having a gold standard dataset for meaningful evaluation, as it enabled quantitative comparison across different approaches. The experience of implementing and comparing these pipelines deepened my understanding of both the technical challenges in information extraction and the practical considerations of choosing appropriate tools for research applications.
+
 ## Contact and Support
 
 For questions or issues, please contact:
